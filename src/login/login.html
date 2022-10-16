@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>site do Caio</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="estilo/style.css">
+	</head>
+	<body>
+		<div class="background"> 
+			<div class="header">
+				<div class="left">
+					<img height="60" width="60" alt="icone do site" src="https://cdn.logojoy.com/wp-content/uploads/2018/08/15101940/7_big1.png" />
+				</div>
+				<div class="right">
+					<div class="container-right">
+						<a href="https://www.google.com.br/" class="link">Google</a>
+						<a href="https://www.facebook.com/" class="link">Facebook</a>
+						<a href="https://www.youtube.com/" class="link">Youtube</a>
+					</div>
+				</div>
+			</div>
+			<div class="content"> 
+			    <div class="title">login</div> 
+				<div class="conteiner-btn">
+					<div class="icon facebook" >F</div>
+					<div style="margin:0px 3px" ></div>
+					<div class="icon linkedin" >in</div>
+				</div>
+				<div class="subtitle">Ou preencha abaixo</div>
+				<div class="conteiner-input">
+						<input onfocus="removeErros('msg-erro-email','email')" class="input-update" id="email" type="email" placeholder="digite seu email">
+						<div id="msg-erro-email" class="label-error"></div>
+						<div style="margin-top:10px" ></div>
+						<input onfocus="removeErros('msg-erro-pass','pass')"  class="input-update" id="pass" type="password" placeholder="digite sua senha">
+						<div id="msg-erro-pass" class="label-error"></div>
+				
+				</div>
+				<div class="conteiner-input low-margin">
+						<button onclick="doLogin()" class="button-login">INICIAR</button>
+						<div style="margin-top:10px" ></div>
+						<button onclick="goToRegister()" class="button-login violet">CADASTRAR</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/login.js"></script>
+</html>
